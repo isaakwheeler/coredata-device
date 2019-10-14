@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var SerialNumbers:[String] = []
+    //TODO: refactor in-app storage to use NSManagedObject array
+    var serialNumbers:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +27,12 @@ class ViewController: UIViewController {
         let saveAction = UIAlertAction(title: "Save", style: .default, handler: {
             action in
             guard let textField = alert.textFields?.first,
-                  let itemToSave = textField.text else
+                  let serialNumber = textField.text else
             {
                 return
             }
             
-            self.SerialNumbers.append(itemToSave)
+            self.serialNumbers.append(serialNumber)
             self.tableView.reloadData()
         })
         
@@ -43,19 +44,23 @@ class ViewController: UIViewController {
         present(alert,animated: true)
     }
     
+    func save(with serialNumber:String){
+        //TODO:Use the MOC with the Device entity to create a newDevice object, update it's property and save it to persistent storage
+    }
 }
 
-//MARK _ TableView Data Source
+//MARK _ TableView Data Source: Refactor to use NSManagedObject array
 extension ViewController:UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = SerialNumbers[indexPath.row]
+        //TODO: refactor to get the device object and use it's value(forKeyPath: ) method to pull the serialNumber text
+        cell.textLabel?.text = serialNumbers[indexPath.row]
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return SerialNumbers.count
+        return serialNumbers.count
     }
 }
