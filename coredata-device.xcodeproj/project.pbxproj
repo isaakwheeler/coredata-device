@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FBEBDFA2919F5A300DB68EA /* coredata_device.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEBDF72919F48100DB68EA /* coredata_device.xcdatamodeld */; };
 		D14BD0162353FD18008357E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BD0152353FD18008357E2 /* AppDelegate.swift */; };
 		D14BD0182353FD18008357E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BD0172353FD18008357E2 /* ViewController.swift */; };
 		D14BD01B2353FD18008357E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14BD0192353FD18008357E2 /* Main.storyboard */; };
-		D14BD01E2353FD18008357E2 /* coredata_device.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D14BD01C2353FD18008357E2 /* coredata_device.xcdatamodeld */; };
 		D14BD0202353FD19008357E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14BD01F2353FD19008357E2 /* Assets.xcassets */; };
 		D14BD0232353FD19008357E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14BD0212353FD19008357E2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FBEBDF82919F48100DB68EA /* coredata_device.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coredata_device.xcdatamodel; sourceTree = "<group>"; };
 		D14BD0122353FD18008357E2 /* coredata-device.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coredata-device.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14BD0152353FD18008357E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D14BD0172353FD18008357E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D14BD01A2353FD18008357E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D14BD01D2353FD18008357E2 /* coredata_device.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coredata_device.xcdatamodel; sourceTree = "<group>"; };
 		D14BD01F2353FD19008357E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D14BD0222353FD19008357E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D14BD0242353FD19008357E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 				D14BD01F2353FD19008357E2 /* Assets.xcassets */,
 				D14BD0212353FD19008357E2 /* LaunchScreen.storyboard */,
 				D14BD0242353FD19008357E2 /* Info.plist */,
-				D14BD01C2353FD18008357E2 /* coredata_device.xcdatamodeld */,
+				3FBEBDF72919F48100DB68EA /* coredata_device.xcdatamodeld */,
 			);
 			path = "coredata-device";
 			sourceTree = "<group>";
@@ -94,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Cascadia College";
 				TargetAttributes = {
 					D14BD0112353FD18008357E2 = {
@@ -140,7 +140,7 @@
 			files = (
 				D14BD0182353FD18008357E2 /* ViewController.swift in Sources */,
 				D14BD0162353FD18008357E2 /* AppDelegate.swift in Sources */,
-				D14BD01E2353FD18008357E2 /* coredata_device.xcdatamodeld in Sources */,
+				3FBEBDFA2919F5A300DB68EA /* coredata_device.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +192,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -253,6 +254,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -342,14 +344,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D14BD01C2353FD18008357E2 /* coredata_device.xcdatamodeld */ = {
+		3FBEBDF72919F48100DB68EA /* coredata_device.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D14BD01D2353FD18008357E2 /* coredata_device.xcdatamodel */,
+				3FBEBDF82919F48100DB68EA /* coredata_device.xcdatamodel */,
 			);
-			currentVersion = D14BD01D2353FD18008357E2 /* coredata_device.xcdatamodel */;
+			currentVersion = 3FBEBDF82919F48100DB68EA /* coredata_device.xcdatamodel */;
 			path = coredata_device.xcdatamodeld;
 			sourceTree = "<group>";
+			usesTabs = 0;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
